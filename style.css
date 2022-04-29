@@ -8,7 +8,7 @@ header h1{
 }
 
 .spazio-icona{
-  background-color: brown;
+  background-color: rgb(177, 203, 120);
   margin: 20px;
   padding: 20px;
 }
@@ -16,4 +16,16 @@ header h1{
 i{
   width: 20px;
   height: 20px;
+}
+
+.blue{
+  color: blue;
+}
+
+.green{
+  color: green;
+}
+
+.orange{
+  color: orange;
 }

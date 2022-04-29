@@ -127,18 +127,16 @@ function creaElementi(icons){
     contenitore.innerHTML += 
     `
 		<div class="col-3 d-flex justify-content-center align-items-center spazio-icona">
-         <i class="fa-solid ${icons[key].prefix}${icons[key].name}"></i>
+         <i  class="fa-solid ${icons[key].prefix}${icons[key].name} ${icons[key].color}"></i><br>
         <h3>${icons[key].name}</h2>
     </div>
 
     `;
   }
 
+
 }
 
 creaElementi(icone);
 
 
-function{
-	
-}
