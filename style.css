@@ -11,11 +11,11 @@ header h1{
   background-color: rgb(177, 203, 120);
   margin: 20px;
   padding: 20px;
+  text-transform: capitalize;
 }
 
 i{
-  width: 20px;
-  height: 20px;
+  font-size: 30px;
 }
 
 .blue{

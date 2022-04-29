@@ -113,25 +113,30 @@ const icone = [
 	}
 ];
 
+
+// funzione per generare gli elementi
 function creaElementi(icons){
 
 	//indico il contenitore dentro al quale andranno messe le icone
 	const contenitore = document.querySelector('.quadentro');
-
-
-	console.log(document.getElementById('selezionatore').value);
 
 	for (const key in icons) {
 
     //inserisco dentro al contenitore l'html con le key
     contenitore.innerHTML += 
     `
-		<div class="col-3 d-flex justify-content-center align-items-center spazio-icona">
-         <i  class="fa-solid ${icons[key].prefix}${icons[key].name} ${icons[key].color}"></i><br>
+		<div class="col-3 d-flex justify-content-center spazio-icona">
+			<div>
+         <i  class="fa-solid ${icons[key].prefix}${icons[key].name} ${icons[key].color}"></i>
+			</div>
+			<div>
         <h3>${icons[key].name}</h2>
+			</div>
     </div>
 
     `;
+
+
   }
 
 
@@ -139,4 +144,25 @@ function creaElementi(icons){
 
 creaElementi(icone);
 
+//quando seleziono una categoria, mi stampa solo quella selezionata
 
+function selezionaCategoria() {
+
+	let valore = document.getElementById('selezionatore').value;
+	let name = (icone['color']);
+
+	console.log(valore);
+	console.log(name);
+	
+	if (valore == 'user') {
+		console.log("Hai selezionato user");
+	} else if (valore == 'animal'){
+		console.log("Hai selezionato animal");
+	} else if  (valore == 'vegetable'){
+	console.log("Hai selezionato vegetable");
+  } else{
+		console.log("Hai selezionato tutti");
+	}
+}
+
+selezionaCategoria();
